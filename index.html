@@ -1,0 +1,1896 @@
+<!doctype html>
+<html>
+    <head>
+        <title>4SI 2024</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="pytho.png" sizes="172x172" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Dekko'rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+        
+        <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Bahianita&family=Gulzar&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/bootstrap.min.css"></head>
+    </head>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+<style>
+    @import url(https://fonts.googleapis.com/earlyaccess/lateef.css);
+    *{
+            margin :0;
+            padding:0;
+            }
+            header{
+                height:60px;
+                background: #252324;
+                top: 0px;
+                text-align: center;
+                animation: header 4s ;
+                position: fixed;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                z-index: 3;
+            }
+            body{
+                /*overflow:hidden;*/
+}
+            section{
+               /* scroll-snap-type:y mandatory;*/
+            }
+            
+            .title{
+                float: center;
+                width:auto;
+                margin-left: auto;
+                margin-right: auto;
+                color:#fff;
+                font-weight:bold ;
+                text-transform: uppercase;
+                line-height: 60px;
+                font-size: 1.8vmax;
+                font-family:Nova Flat ;
+                text-shadow:0 0 20px #FFD700,0 0 20px #FFD700,0 0 20px #FFD700;
+                text-align: center;
+                animation: dd;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                margin-top: -5px;
+                
+            }
+            html {
+                scroll-behavior: smooth;
+            }
+            .banner{
+            height:60%;
+            }
+
+            .hrbanner{
+                width: 100%;
+                background-color: #262626;
+                margin-top: -5px;
+                animation: hr;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+                height: 10px;
+                border: 0;
+            }
+            @keyframes hr{
+  0%   {top: 0px; left: 0px; background-color: #262626;}
+  12.5%  {top: 0px; left: 10px; background-color: #262626;}
+  25%  {top: 10px; left: 10px; background-color: #a78e00;}
+  37.5%  {top: 10px; left: 0px; background-color: #262626;}
+  50% {top: 0px; left: 0px; background-color: #262626;}
+  62.5%  {top: 0px; left: 10px;  background-color: #262626;}
+  75%  {top: 10px; left: 10px; background-color: #a78e00;}
+  87.5%  {top: 10px; left: 0px; background-color: #262626;}
+  100% {top: 0px; left: 0px; background-color: #262626;}
+}
+            .banner img{
+                margin-top: 20px;
+                width: 100%;
+                height: 80vh;
+            }
+            
+            .about p{
+                font-size: 4vh;
+                line-height: 1.7;
+                font-family: Allerta Stencil;
+                margin-bottom: 25px;
+            }
+            .asami{
+                font-size: 4vh;
+                line-height: 1.7;
+                font-family:Nova Flat ;
+                margin-bottom: auto;
+                color: white;
+                text-shadow: 0 0 3px black, 0 0 5px black; 
+            }
+            section{
+
+            }
+            .desc{
+                font-family: dekko;
+                color: #808080;
+                margin-bottom: 20px;
+                font-size: 2vw;
+            }
+            footer{
+                background: #141414;
+                color: #fff;
+                padding: 15px 50px;
+                text-align: center  ;
+                font-size: 20px;
+            }
+            
+            .name{ font-family:Nova Flat ;
+                animation: ddd;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+            }
+            .animat{
+                animation: ddd;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+            }
+
+            .container{
+                
+            }
+            .quote{
+                font-family: Allerta Stencil;
+                text-shadow: 0 0 3px black, 0 0 5px black; 
+                color: white;
+                letter-spacing: 2px;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .backg{
+                background-color: #3333335e;
+            }
+            .quote img{
+                width: 5vh;
+                height: 5vh;
+            }
+            .pquote{
+                border-radius: 0;      
+                font-family: Allerta Stencil;
+                border-width: 100%;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 100px;
+                font-size: 90vw;
+            }
+            .pquote2{
+                border-radius: 0;      
+                font-family: Allerta Stencil;
+                border-width: 100%;
+                font-size: large;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 100px;
+            }
+            .pquote2ar ,.pquote2arr{
+                border-radius: 0;      
+                font-family: Lateef;
+                border-width: 100%;
+                font-size: 9vw;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 100px;
+                width: 60%;
+            }
+            .pquote2arr{
+                width: 100%;
+            }
+            
+            .container span{
+                color: white;
+                text-transform: uppercase; 
+                display: block;
+                background: #262626;
+                text-shadow:0 0 20px #FFD700;
+                font-family:Nova Flat ;
+                text-align: center;
+            }
+            .text1{
+                width: auto;
+                font-family:Nova Flat ;
+                font-size: 60px;
+                letter-spacing: 8px;
+                position: relative;
+                text-align: center;
+                background-color: gray;
+                animation: ddd 3s;
+                animation: text 3s 1;
+            }
+            .text2{
+                font-size: 30px;
+                font-family:Nova Flat ;
+                width: auto;
+            }
+            @keyframes text{
+                0%{
+               
+                margin-bottom: -40px;
+            }
+                30%{
+                letter-spacing:25px;
+                margin-bottom:-40px;
+        }  
+                85%{
+                    letter-spacing: 8px;
+                    margin-bottom: -40px;
+                }  
+            } 
+
+           
+            .container img{
+                width: 40%;
+                height: 30%;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+            .tsawer img {
+                width: 8vw;
+                height: 8vw;
+                border-radius: 20px;
+                }
+            .tsawer :hover {
+                box-shadow:0 0 20px #d3d3d3d5;
+            }
+            .contact span{
+                color: white;
+                font-family:Nova Flat ;
+                text-transform: uppercase; 
+                display: block;
+                background: #262626;
+                text-shadow:0 0 20px #FFD700;
+                text-align: center;
+            }
+            .ourpics{
+                background-color: #3c3c3c21;
+            }
+            .ourpics span{
+                color: white;
+                text-transform: uppercase; 
+                display: block;
+                background: #262626;
+                text-shadow:0 0 20px #FFD700;
+                text-align: center;
+            }
+            .text1{
+                font-size: 40px;
+                letter-spacing: 8px;
+                position: relative;
+                text-align: center;
+                background-color: gray;
+                animation: text 3s 1;
+            }
+            .text2{
+                font-size: 30px;
+                
+
+            }
+            @keyframes h1{
+                0%{
+               
+                margin-bottom: -4000px;
+            }
+                30%{
+                letter-spacing:2px;
+                margin-bottom:-3000px;
+        }  
+                60%{
+                    letter-spacing: 1px;
+                    margin-bottom: -2500px;
+                }  
+            } 
+            @keyframes d{
+                0%{
+               
+                margin-bottom: -40px;
+            }
+                30%{
+                letter-spacing:25px;
+                margin-bottom:-40px;
+        }
+                85%{
+                    letter-spacing: 8px;
+                    margin-bottom: -40px;
+                }  
+            } 
+            .contact {background-color: #3c3c3c21;
+            } 
+            @keyframes ddd {
+  0%   {top: 0px; left: 0px; color: #c5c5f394;}
+  12.5%  {top: 0px; left: 10px; color: rgb(172, 172, 250);}
+  25%  {top: 10px; left: 10px; color: #d2f9f6;}
+  37.5%  {top: 10px; left: 0px; color: rgb(182, 177, 253);}
+  50% {top: 0px; left: 0px; color: #c5c5f394;}
+  62.5%  {top: 0px; left: 10px; color: rgb(172, 172, 250);}
+  75%  {top: 10px; left: 10px; color: #d2f9f6;}
+  87.5%  {top: 10px; left: 0px; color: rgb(182, 177, 253);}
+  100% {top: 0px; left: 0px; color: #c5c5f394;}
+}
+@keyframes d {
+  0%   {top: 0px; left: 0px; background-color: rgba(172, 172, 250, 0.568);}
+  12.5%  {top: 0px; left: 10px; background-color: rgba(172, 172, 250, 0.74);}
+  25%  {top: 10px; left: 10px; background-color: #d2f9f688;}
+  37.5%  {top: 10px; left: 0px; background-color: rgba(182, 177, 253, 0.562);}
+  50% {top: 0px; left: 0px; background-color: #c5c5f394;}
+  62.5%  {top: 0px; left: 10px; background-color: rgba(172, 172, 250, 0.527);}
+  75%  {top: 10px; left: 10px; background-color: #d2f9f673;}
+  87.5%  {top: 10px; left: 0px; background-color: rgba(182, 177, 253, 0.473);}
+  100% {top: 0px; left: 0px; background-color: #c5c5f394;}
+}
+@keyframes dd {
+  0%   {top: 0px; left: 0px;text-shadow:0 0 20px #ffd900b9;}
+  25% {top: 0px; left: 0px; text-shadow:0 0 20px #ffd900d5;}
+  50% {top: 0px; left: 0px; text-shadow:0 0 20px #ffd900;}
+  75% {top: 0px; left: 0px; text-shadow:0 0 20px #ffd900d3;}
+  100%   {top: 0px; left: 0px;text-shadow:0 0 20px #ffd900a9;}
+}
+@keyframes quote {
+  0%   {top: 0px; left: 0px;text-shadow:0 0 20px #ffd900;}
+  25% {top: 0px; left: 0px; text-shadow:0 0 20px #9e8600d5;}
+  50% {top: 0px; left: 0px; text-shadow:0 0 20px #3f3600;}
+  75% {top: 0px; left: 0px; text-shadow:0 0 20px #998200d3;}
+  100%   {top: 0px; left: 0px;text-shadow:0 0 20px #ffd900a9;}
+}
+.pal{
+    width: 30px;
+}
+            .contact marquee {
+                font-size: 30px;
+                background-color: #36363683;
+                color: white;
+                font-family: courier ;
+                width: 90%;
+                height: 200px;
+                font-weight: 900;
+                text-shadow:0 0 20px rgb(0, 255, 0);
+                color: green;
+                transition: 1s;
+            } 
+            .contact marquee img{
+                transition: 1s;
+            }
+            .contact marquee img:hover{
+                width: 300px;
+            }
+           
+            .quote img{
+                width: 20%;
+                height: 20%;
+            }
+            .pquote{
+                text-shadow:0 0 20px #FFD700;
+                margin-left: auto;
+                font-family: Allerta Stencil;
+                margin-right: auto;
+                align-items: center;
+                text-transform: uppercase;
+                line-height: 60px;
+                font-size: 20px;
+                font-family: sans-serif;
+                text-align: center;
+                animation: quote;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            .arabquote{
+                font-family: 'Gulzar', serif;
+                 color: white;
+                font-size: 22px;
+                text-shadow: 0 0 3px black, 0 0 5px black; 
+                width: 90%;
+            }
+            .green{
+                color: green;
+            }
+            .red{
+                color: red;
+            }
+            .hrquote{
+                width: 9%;
+                height:5px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #262626;
+                margin-top: 1%;
+                margin-bottom: 40px;
+                border: 0;
+                border-bottom: 1px solid white;
+            }
+            .section{
+                background-color: #0000008f;
+            }
+            .liste1{
+                background-color: #0000008f;
+            }
+            .bg{
+                background-color: #000000b0;
+            }
+            .b:hover{
+                transform: scale(0.9);
+              }
+            .liste2 {
+                background-color: #0000008f;
+            }
+            .memories{
+                box-shadow: 0 0 10px #000000;
+                animation: mem;
+                animation-duration: 60s;
+                animation-iteration-count: infinite;
+                width: 40vw;
+                height: 30vw;
+                background-color: #000;
+                background-image: url("adem.jpg") ;
+                background-size: cover;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                min-height: 20vw;
+                animation-fill-mode: forwards;
+            }
+            .memories:hover{
+                animation-duration: 20s;
+                animation-fill-mode: forwards;
+            }
+            .pmemories{
+                
+            }
+            .flags{
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+            .flags img{
+                width: 70px;
+                height: 40px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            tr{
+                 width: 75px;
+                 height: 20%;
+            }
+            .arte{
+                background-color: #3c3c3c21;
+            }
+            .art th{
+                width: 60%;
+                height: auto;
+            }
+            .art2 th{
+                width: 40%;
+                height: auto;
+            }
+            .art table{
+                width: auto;
+            }
+            .art2 , .art{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .art2 table{
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @keyframes mem {
+  0%   {top: 0px; left: 0px; background-image: url("adem.jpg") ;}
+  5% {top: 0px; left: 0px;  background-image: url("ahmed.jpg");}
+  11% {top: 0px; left: 0px;  background-image: url("achref.jpg");}
+  16% {top: 0px; left: 0px;  background-image: url("akrem.jpg");}
+ 22%   {top: 0px; left: 0px; background-image: url("ameni.jpg");}
+  27% {top: 0px; left: 0px;  background-image: url("iyed.jpg");}
+  32% {top: 0px; left: 0px;  background-image: url("jessem.jpg");}
+  38% {top: 0px; left: 0px;  background-image: url("khalil.jpg");}
+  44%   {top: 0px; left: 0px; background-image: url("ramez.jpg");}
+  50% {top: 0px; left: 0px;  background-image: url("rasslen.jpg");}
+  56% {top: 0px; left: 0px;  background-image: url("sejda.jpg");}
+  61% {top: 0px; left: 0px;  background-image: url("sywar.jpg");}
+  67%   {top: 0px; left: 0px; background-image: url("souhail.jpg");}
+  72% {top: 0px; left: 0px;  background-image: url("mohamed.jpg");}
+  78% {top: 0px; left: 0px;  background-image: url("omar.jpg");}
+  84% {top: 0px; left: 0px;  background-image: url("rhouma.jpg");}
+  90%   {top: 0px; left: 0px; background-image: url("benothmen.jpg");}
+  95% {top: 0px; left: 0px;  background-image: url("azizlamari.jpg");}
+  100%   {top: 0px; left: 0px; background-image: url("adem.jpg");}
+}
+            .art tr{
+                margin-top: 7px
+            }
+            .art img{
+                width: 60vw;
+                margin-bottom: -7px;
+                margin-top: 50px;
+                box-shadow: 0 0 10px #000000;
+                height: 35vh;
+                margin-left: auto;
+            }
+            .art2 img{
+                height: 2px;
+                margin-bottom: -7.5px;
+                width: 80%;
+            }
+            .mem1 img{
+                margin-bottom: -7px;
+                box-shadow: 0 0 10px #000000;
+                height: 29vw;
+                border: 4px solid #00000093;
+              }
+           .mem2 img{
+            height: 34vw;
+            box-shadow: 0 0 10px #000000;
+            border: 4px solid #00000093;
+              }
+              @keyframes butt{
+  0%   {top: 0px; left: 0px; border: 5px solid #262626;}
+  12.5%  {top: 0px; left: 10px; border: 5px solid #262626;}
+  25%  {top: 10px; left: 10px; border: 5px solid #a78e00;}
+  37.5%  {top: 10px; left: 0px; border: 5px solid #262626;}
+  50% {top: 0px; left: 0px; border: 5px solid #262626;}
+  62.5%  {top: 0px; left: 10px;  border: 5px solid #262626;}
+  75%  {top: 10px; left: 10px; border: 5px solid #a78e00;}
+  87.5%  {top: 10px; left: 0px; border: 5px solid #262626;}
+  100% {top: 0px; left: 0px; border: 5px solid #262626;}
+}
+           
+            .accentgrave{
+                font-size: 6vw;
+                color: white;
+                margin-top: -10px;
+                font-weight: normal;
+                width: 15vw;
+            }
+            .accentgrave2{
+                font-size: 6vw;
+                color: white;
+                font-weight: normal;
+                width: 15vw;
+            }
+            .accentaigu{
+                font-size: 6vw;
+                color: #FFD700;
+                 font-weight: normal;
+                 margin-top: -10px;
+                 width: 15vw;
+            }
+            .amoud{
+                box-shadow: 0 0 10px #000000;
+                border-radius: 50%;
+                width: 7vw;
+                height: 7vw;
+            }
+            .amoud img{
+                width: 7vw;
+                height: 7vw;
+                margin-bottom: -5%;
+                transition: 1s;
+            }
+            #body{
+                border-radius: 0;      
+                font-family: Allerta Stencil;
+                border-width: 100%;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 100px; 
+            }
+            h2{
+                font-family:"Allerta Stencil";
+                width: 80%;
+            }
+            .amoud img:hover{
+                transform: scale(1.1);
+            }
+            .lista1{
+                text-align: center;
+                width: 100%;
+            }
+            .lista1 th{
+                width: 25%;
+            }
+            .lista2{
+                text-align: center;
+                width: 70%;
+                
+            }
+            .lista1 img{
+                transition: 1s;
+            }
+            .lista2 img{
+                transition: 1s;
+            }
+            .lista2 th{
+                width: 33.33%;
+            }
+            .lista1 img:hover{
+                transform: scale(1.1);
+            }
+            .lista2 img:hover{
+                transform: scale(1.1);
+            }
+            .gold{
+                color: #FFD700;
+            }
+            .all{
+                margin-left: auto;
+                margin-right: auto;
+                border-right-style: solid;
+                border-left-style: solid;
+            }
+            .underall{
+              background: url(gif34.gif) no-repeat center center fixed;
+            background-size: cover;
+            
+            }
+
+            
+            #overlay img{
+                width: 10vw;
+                height: 10vw;
+            }
+            .accent{
+                margin-left:-10vw;
+            }
+            .h3{
+           color: #FFD700; 
+           font-family: "Arial";
+           font-size: 2vw;
+           margin: 10px 0 0 10px;
+           text-shadow: 0 0 3px black, 0 0 5px black; 
+           white-space: nowrap;
+           overflow: hidden;
+           width: 100%;
+           margin-left: auto;
+           margin-right: auto;
+           animation: type 8s steps(60, end); 
+        }
+
+ 
+         @keyframes type{ 
+          from { 
+               width: 0; 
+               } 
+           }
+           input::placeholder {
+            color: rgb(146, 133, 133);
+        }
+        button {
+            padding: 2%;
+            font-weight: bolder;
+            width: 60px;
+            text-shadow: 0 0 15px black;
+            border-bottom:2px solid transparent;
+            color: #FFD700;
+            background-color: #171717;
+            margin-top: -2vw;
+            margin-bottom: -2vw;
+        }
+        button:hover {
+            transform: scale(0.9);
+            border-bottom: 2px solid white;
+        }
+        .command{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .espace{
+            width: 20%;
+        }
+        .espace2{
+            width: 5%;
+        }
+        button{
+            cursor: pointer;
+        }
+        input {
+            border:0;   
+            width: 50vw;
+            height: 2vw;
+            color: #088000;
+            font-size: 1.15vw;
+            border-top: 2vw #2b2b2b;
+            background-color: #0c0c0c;
+            text-shadow: 0 0 3px black, 0 0 5px black; 
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -20px;
+            padding-left: 5px;
+        }
+        input::placeholder {
+            color: rgb(146, 133, 133);
+            font-size: 1.5vw;
+        }
+        textarea{
+            resize: none;
+            width: 100%;
+            color: #ffffff;
+            text-shadow: 0 0 3px black, 0 0 5px black; 
+            height: 10vw;
+            background-color: #0c0c0c;
+        }
+        .golden{
+            color: #000;
+        }
+        #memss , #artee , #quote1{
+            width: 100%;
+        }
+        #quote1{
+            width: 100%;
+        }
+        .quote2{
+            background-color: #1a1a1ab9;
+            color: white;
+            text-shadow: 0 0 3px black, 0 0 5px black;
+            background: url(quds.jpg) no-repeat center ;
+            background-size: cover;
+        }
+        .quote2:hover{
+            animation: backquds;
+            transition: 1s;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes backquds{
+            0%{background: url(quds.jpg) no-repeat center ;
+            background-size: cover;}
+            5%{background: url(quds.jpg) no-repeat center ;
+            background-size: cover;
+            }
+            10%{background: url(quds.gif) no-repeat center ;
+            background-size: cover;
+            }
+            95%{background: url(quds.gif) no-repeat center ;
+            background-size: cover;
+            }
+            100%{background: url(quds.jpg) no-repeat center ;
+            background-size: cover;}
+        }
+        .quote2 p {
+            font-size: 5vh;
+        }
+        #mess{
+        color: #088000; 
+           font-family: "Arial";
+           font-size: 1.3vw;
+           margin: 10px 0 0 10px;
+           background-color: #2b2b2b;
+           text-shadow: 0 0 3px black, 0 0 5px black; }
+           #mesf{
+        color: #ff0000; 
+           font-family: "Arial";
+           font-size: 1.3vw;
+           background-color: #2b2b2b;
+           margin: 10px 0 0 10px;
+           text-shadow: 0 0 3px black, 0 0 5px black; }
+        .lista3{
+            background-color: #1a1a1ab9;
+        }
+        .left{
+            left: 1;
+        }
+        .left {
+        overflow: hidden;
+        width: 30%;
+        float: left;
+        }
+
+        .left a {
+        
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        line-height: 60px;
+        font-size: 20px;
+        font-family:Nova Flat ;
+        text-shadow:0 0 20px #FFD700;
+        text-align: center;
+        width: auto;
+        font-size: 1.4vw;
+        }
+        .right{
+            overflow: hidden;
+            width: 30%;
+            float: right;
+            transition: 1s;
+        }
+        .right a {
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none; 
+        line-height: 60px;
+        font-size: 20px;
+        font-family:Nova Flat ;
+        text-shadow:0 0 20px #FFD700;
+        text-align: center;
+        width: auto;
+        font-size: 1.4vw;
+        }
+        #home{
+        display: flex;
+        justify-content: space-between;
+        }
+        .hrheader{
+            width: 100%;
+        }
+        #overlay{
+            height: 100vh;
+            top:0;
+            bottom: 0;
+            width: 10vh;
+              }
+              .overlay-text {
+                position: absolute;
+                top: 45%; 
+                left: 50%; 
+                transform: translate(-50%, -50%); 
+                font-family: nova flat;
+                text-shadow: 0 0 3px black, 0 0 5px black; 
+                background-color: #0000002d;
+                color: #fff; 
+                padding: 10px 20px; 
+                font-size: 25px; 
+                text-align: center;
+                margin-top: auto;
+                margin-top: -20px;
+                margin-bottom: auto;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                animation: fam;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+            }
+            #overlay{
+                margin-left: auto;
+                margin-right: auto;
+
+                width: 100%;
+                text-align: center;
+                background: url(32.gif) no-repeat center center fixed;
+                background-size: cover;
+                color: white;
+                text-shadow: 0 0 3px black, 0 0 5px black; 
+
+            }
+            .loa{
+                mix-blend-mode: color-burn;
+                width:"30%";
+                height:"30%";
+                }
+            .iconn{
+                width:"20%";
+                height:"20%";
+            }
+            .message{
+                font-size: 205px;
+            }
+            .lquoteloula{
+
+            }
+            .mybequest{
+                text-align: center;
+                font-size: 2vw;
+                letter-spacing: 2px;
+                font-family:Nova Flat ;
+              }
+              .mybequest2{
+                text-align: center;
+                font-size: 1.7vw;
+                color: #262626;
+                letter-spacing: 3px;
+              }
+              .mybeqimg{
+                display: block;
+                width: 5vw;
+                height:5vw;
+                border-radius: 50%;
+              }
+              .mybeq{
+                margin-left: auto;
+                margin-right: auto;
+              }
+              .hrmybeq{
+                width: 30vw;
+                margin-left: auto;
+                margin-right: auto;
+              }
+              .mybeqp{
+                margin-left: auto;
+                margin-right: auto;
+              }
+              .tq{
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+              }
+              .fq{
+                width: auto;
+                background-color: #00000093;
+                 border-radius: 8px;
+                box-shadow: 0 0 10px #666;
+              }
+              .fq:hover{
+                transition: 1s;
+                animation: backfq;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes backfq{
+                0%{background-color: #00000093;}
+                5%{background-color: #00000093;
+                }
+                10%{background: url(classe.jpg) no-repeat center ;
+                background-size: cover;
+                }
+                80%{background: url(classe.jpg) no-repeat center ;
+                background-size: cover;
+                }
+                100%{background-color: #00000093;}
+            }
+              .margauot{
+                margin: auto;
+              }
+              .margauot:hover{
+                text-shadow:0 0 20px #1900ff;
+              }
+              header a {
+                margin-left: auto;
+                margin-right: auto;
+                text-decoration: none;
+              }
+              img{
+                /*pointer-events: none;*/
+              }
+              #knowmore{
+                border: 1px solid white;
+                background-color: #0000008f;
+                color: white;
+                transition: 0.5s;
+                width: auto;
+                font-size: 2.3vh;
+                font-variant: small-caps;
+                margin-top: 5px;
+                margin-bottom: 15px;
+              }
+              #knowmore:hover{
+                border: 1px solid black;
+                background-color: #ffffff8f;
+                color: black;
+              }
+              .btnn{
+                border: 1px solid white;
+                background-color: #0000008f;
+                color: #FFD700;
+                transition: 0.5s;
+                width: auto;
+                font-size: 3vh;
+                margin-top: 5px;
+                margin-bottom: 15px;
+                padding-top: 8px;
+                height: 40px;
+                padding-bottom: 4vh;
+              }
+              .btnn:hover{
+                border: 1px solid black;
+                background-color: #ffffff8f;
+                color: black;
+              }
+              .para4{
+                background-color: black;
+                width: 10%;
+                color: white;
+                font-size: 3vh;
+                font-family: 'Open Sans', sans-serif;
+            }
+            .esp{
+                width: 20%;
+            }
+            .tan9is{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .arte{
+                background: url(museum.webp) no-repeat center ;
+            background-size: cover;
+            }
+            .tadhlil{
+            background-color: rgba(0, 0, 0, 0.603);
+        }
+        #knowwmore{
+                border: 1px solid white;
+                background-color: black;
+                color: white;
+                transition: 0.5s;
+                width: auto;
+                font-size: 2.3vh;
+                padding: 2%;
+                font-variant: small-caps;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5px;
+                margin-bottom: 15px;
+              }
+              #knowwmore:hover{
+                border: 1px solid black;
+                background-color: #ffffff8f;
+                color: black;
+              }
+            .dakhle{
+                background-color: #171718;
+                width: 100%;
+                height: 100%;
+                color: white;
+            }
+            .dakhle p, .h2d, .h3d{
+                text-align: left;
+            }
+            .tda{
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            .tda img{
+                width: 80%;
+            }
+            .mybeqq{
+                margin-left: auto;
+                margin-right: auto;
+              }
+              .mybeqimgg{
+                display: block;
+                width: 7vw;
+                height:7vw;
+                border-radius: 50%;
+              }
+            #bc{
+                margin-top: 100px;
+                margin-bottom: 150px;
+            }
+            .sd  {
+                font-family: 'Open Sans', sans-serif;
+                color: rgb(206, 206, 206);
+                font-weight: 10;
+                font-size: 1.3vw;
+            }
+            .sdd{
+                font-family: 'Open Sans', sans-serif;
+                color: rgb(206, 206, 206);
+                font-weight: 10;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .sddd{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.5vw;
+            }
+            .h2d , .h2dd{
+                font-family:Nova Flat;
+            }
+            .h2dd{
+                font-size: 3vw;
+            }
+
+            .h3d{
+                font-weight: 20;
+                color: #e6e6e6;
+            }
+            
+            .dimg1:hover{
+                animation: dimg1;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes dimg1{
+                0%{background:url(backdakhla.jpg) center no-repeat;
+                background-size: cover;}
+                3%{background:url(backdakhla.jpg) center no-repeat;
+                background-size: cover;
+                }
+                8%{background: url(backhriga.jpg) no-repeat center ;
+                background-size: cover;
+                }
+                80%{background: url(backhriga.jpg) no-repeat center ;
+                background-size: cover;
+                }
+                100%{background:url(backdakhla.jpg) center no-repeat;
+                background-size: cover;}}
+            .dimg2{
+                width: 40%;
+                height: 35vh;
+                margin-top: -10px;
+                margin-bottom: -10px;
+            }
+            .dimg2 img{
+                width: 50%;
+                height: 35vh;
+            }
+            .th1 .sd,.h2d{
+                margin-left: 10px;
+            }
+            .th1{
+                width: 45%;
+            }
+            .tda2{
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+                height: 10vh;
+            }
+            .tda2 img{
+                width: 90%;
+                border: 1px solid black;
+                height: 50vh
+            }
+            .dimg1{
+                width: 40%;
+                height: 30vh;
+                background:url(backdakhla.jpg) center no-repeat;
+                background-size: cover;
+                margin-top: -20px;
+                margin-bottom: -20px;
+            }
+            .dimg1 img{
+                border: 0px;
+            }
+            .tda2 .part2 img{
+                margin-top: -40px;
+                width: 100%;
+            }
+            .akber{
+                height: 40vw;
+            }
+            .akber th img{
+                height: 100%;
+            }
+            .lespace{
+                height: 40px;
+            }
+            .thth{
+                text-align: center;
+            }
+            .tbequest{
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .tbequest tr{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .white{
+                color: white;
+            }
+            .le{
+                width: 80%;
+            }
+            .b{
+                width: auto;
+                padding: 10px 30px;
+                
+            }
+            .backblanchhh{
+                background-color: white;
+                padding-top: 20px;
+                width: 45vw;
+                padding-bottom: 50px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        /*custom scroll bar from the internet*/
+        ::-webkit-scrollbar{
+            width: 15px;
+        }
+        ::-webkit-scrollbar-track{
+            background-color: #525252;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: #262626;
+            border-radius: 10px;
+        }
+</style>
+
+<body onload="alertt()">
+    <div >
+    <div id="overlay"><center><br><br><img src="pytho.png" class="iconn"></center>
+    <br><br><center><h2 font-family="Allerta Stencil" class="messagee">It may take couple <span class="gold">seconds.</span></h2></center>
+    <br>
+        
+    </h2><br><br>
+<img src="loading.gif" class="loa"></center></div>
+</div>
+<div  id="all">
+<header >
+        <section id="home">
+            <div class="left" id="left">
+                <a href="#memss" class="right1">moments</a>
+                <a href="#lista" class="right2">class</a>
+            </div>
+            <a href="#all"><h1 class="title">Bac Info 2k24</h1></a>
+            <div class="right" id="right">
+                <a href="#dakhla" class="left1">big Thing</a>
+                <a href="#artee" class="left2">our art</a>
+            </div>
+    </section>
+    <hr class="hrheader">
+    </header>
+    <div class="underall">
+        <div class="all" >
+            <div class="banner">
+                <img src="classebanner.jpg">
+                <div class="overlay-text">Our Family</div>
+                <hr class="hrbanner">
+            </div>
+    
+        <section class="codee" id="panel">
+            <br>
+<br>
+            <center><h3 class="h3">Want to feel like a developper?</h3></center>
+            <br>
+            <br>
+            <table border="0" class="command">
+                <tr>
+            <th colspan="3"><textarea readonly rows="5" id="message">Write these lines of codes down&#13;&#10;@import tools&#13;&#10;GET Access&#13;&#10;/create website
+            </textarea></th>
+        </tr>
+    <tr>
+            <th colspan="2"><input type="text"id="t1" placeholder="code here" onkeyup="verif()"></th>
+        <th><button onclick="verif()">Code!</button></th>
+    </tr>
+    <tr>
+        <center><th colspan="3"><p id="mess" ></p></th></center>
+    </tr>
+    <tr>
+        <center><th colspan="3"><p id="mesf" ></p></th></center>
+    </tr>
+    <tr>
+    </table><br>
+        <center><button onclick="veriff()" class="btnn" id="skip">&nbsp; skip &nbsp;</button></center>
+    
+        </section>
+        
+
+<section class="about" id="store">
+    <div id="quote1">
+<section class="quote">
+</br>
+<br>
+<div class="lquoteloula">
+    </br>
+</br>
+<fieldset class="fq">
+    <br>
+    <table class="tq" border="0">
+        <tr>
+            <th class="accentgrave">``</th>
+    <th> <div class="amoud"><img src="pytho.png"></div></th>
+    <th class="accentaigu">``</th>
+    </tr>
+    </table>
+    <hr class="hrquote">
+    <center><p class="pquote"><span class="back">We are all guilty of allowing so-called experts, </span><span class="back"> or just people who have </span><span class="back"> more experience in a given </span><span class="back"> field than we do, </span><span class="bacg"> to cap our potential </span>
+    </p></center>
+    <br>
+</div>
+</fieldset>
+    <br>
+    <br>
+
+</section>
+</div>
+</section>
+<br><br>
+<div id="lista">
+<section class="liste1">
+
+<div class="container">
+
+<hr>
+<hr>
+<span class="text1"><span class="margauto">Meet</span></span>
+
+<span class="text2"><span class="margauto">Our Legendary Crew</span></span>
+<hr>
+<hr>
+<hr>
+</Br>
+<br>
+<div class="tan9is">
+<center>
+<table border="0" class="lista1">
+    <tr><br><br></tr>
+<tr>
+    <th class="tsawer"><img src="adem.jpg"></th>
+    <th class="tsawer"><img src="ahmed.jpg"></th>
+    <th class="tsawer"><img src="achref.jpg"></th>
+    <th class="tsawer"><img src="akrem.jpg"></th>
+    </tr>
+
+<tr>
+    <th><p class="asami">Adem</p></th>
+    <th><p class="asami">Ahmed</p></th>
+    <th><p class="asami">Achref</p></th>
+    <th><p class="asami">Akrem</p></th>
+</tr>
+<tr><th><p class="desc">&nbsp;</p></th>
+    <th><p class="desc">&nbsp;</p></th>
+    <th><p class="desc">&nbsp;</p></th>
+    <th><p class="desc">&nbsp;</p></th>
+</tr>
+    </center>
+</table>
+
+    <table border="0" class="lista2">
+<tr>
+    
+    <tr><br><br></tr>
+<th class="tsawer"><img src="ameni.jpg"></th>
+<th class="tsawer"><img src="iyed.jpg"></th>
+<th class="tsawer"><img src="jessem.jpg"></th>
+</tr>
+<tr>
+    
+    <th><p class="asami" >Ameni</p></th>
+    <th><p class="asami">Iyed</p></th>
+    <th><p class="asami">Jessem</p></th>
+</tr>
+<tr>
+
+    <th><p class="desc">&nbsp;</p></th>
+    <th><p class="desc">&nbsp;</p></th>
+    <th><p class="desc">Golden Boy</p></th>
+</tr>
+</center>
+    </table>
+
+<table border="0" class="lista1">
+    <tr><br><br></tr>
+    <tr>
+    <th class="tsawer"><img src="khalil.jpg"></th>
+    <th class="tsawer"><img src="ramez.jpg"></th>
+    <th class="tsawer"><img src="rasslen.jpg"></th>
+    <th class="tsawer"><img src="sejda.jpg"></th>
+    </tr>
+    <tr>
+    <th><p class="asami">khalil</p></th>
+    <th><p class="asami">Ramez</p></th>
+    <th><p class="asami">Rasslen</p></th>
+    <th><p class="asami">Sajida</p></th>
+    
+    </tr>
+    <tr>
+
+        <th><p class="desc">Joy Boy</p></th>
+        <th><p class="desc">&nbsp;</p></th>
+        <th><p class="desc">&nbsp;</p></th>
+        <th><p class="desc">(Taylor's Version)</p></th>
+    </tr>
+</table>
+</div>
+</br>
+</br>
+</div>
+</section>
+<section class="liste2">
+    <div class="container">
+<hr class="hrbanner">
+<br>
+<br>
+<div class="tan9is">
+<table border="0" class="lista1">
+    <tr><br><br></tr>
+    <tr>
+        <th class="tsawer"><img src="sywar.jpg"></th>
+        <th class="tsawer"><img src="souhail.jpg"></th>
+        <th class="tsawer"><img src="mohamed.jpg"></th>
+        <th class="tsawer"><img src="omar.jpg"></th>
+    
+    </tr>
+    <th><p class="asami">Siwar</p></th>
+        <th><p class="asami" >Souhail</p></th>
+        <th><p class="asami">Mohamed</p></th>
+        <th><p class="asami">Omar</p></th>
+    <tr>
+        <th><p class="desc">N/A</p></th>
+        <th><p class="desc">Taraji fanboy</p></th>
+        <th><p class="desc">&nbsp;</p></th>
+        <th><p class="desc">&nbsp;</p></th>
+    </tr>
+        </center>
+    </table>
+    <center>
+        <table border="0" class="lista2">
+    </center>
+    <center>
+        </table>
+    <table border="0" class="lista1">
+        <tr><br><br></tr>
+        <th class="tsawer"><img src="benothmen.jpg"></th>
+        <th class="tsawer"><img src="rhouma.jpg"></th>
+        <th class="tsawer"><img src="azizlamari.jpg"></th>
+        </tr>
+        <tr>          
+        <th><p class="asami">Azyyz</p></th>
+        <th><p class="asami">AbdRahmen</p></th>
+        <th><p class="asami" >Aziz</p></th>
+        </tr>
+        
+        <tr>        
+        <th><p class="desc">&nbsp;</p></th>
+        <th><p class="desc">I do programming for life</p></th>
+        <th><p class="desc">&nbsp;</p></th>
+        </tr>
+    </table>
+</center>
+    </div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</div>
+</section>
+
+
+</div>
+</section>
+<section class="dakhla" id="dakhla">
+<hr>
+<hr>
+<hr>
+<div class="container">
+<span class="text1"><span class="margauto">Our</span></span>
+<span class="text2"><span class="margauto">Big Thing</span></span></div>
+<hr>
+<hr>
+<hr>
+
+    <div class="obt" id="bc">
+        <div class="backblanchhh">
+       <center> <h2 class="h2" id="timeleft">loading</h2><br><br><br>
+       <button onclick="sound()" class="b"><img src="lock.png" width="50" height="50"></button></center></div>
+    </div>
+    
+    <div class="dakhle" id="ac">
+        <div class="dakhle">
+            <div class="tan9is">
+            <br>
+            <center><img src="crown.png" height="125" width="125"></center><br>
+            <table class="tda" border="0">
+                <tr>
+                    <th class="th1"><h2 class="h2dd">Arabic King</h2>
+                        <br><p class="sddd">We decided that nothing can represent us more than our arabic idendity, culture, history and especially our <span class="gold">Golden Age</span>.</p></th>
+                        <th class="espace2"></th>
+                        <th class="dimg2"><img src="persdakhla.jpg"></th>
+                </tr>
+                <tr>
+                    <th colspan="3"><br><br></th>
+                </tr>
+                <tr>
+                    <th colspan="2"><br><br></th>
+                </tr>
+                <tr>
+                    <th class="dimg1"></th>
+                    <th class="espace2"></th>
+                    <th><h2 class="h3d">About</h3><br><p class="sd"><span class="gold">Vini</span>, <span class="gold">Vidi</span>, <span class="gold">Vici</span> : ("<span class="white">I came, I saw, I conquered</span>") is a Latin phrase used to refer to a swift, conclusive victory.  The phrase is popularly attributed to Julius Caesar.
+                    </p> <br><br><button id="knowwmore" onclick="link()">&nbsp;Know More&nbsp;</button></th>
+                </tr>
+                <tr>
+                    <th colspan="3"><br><br></th>
+                </tr>
+            </table>
+    </br>
+    <hr><hr>
+    </br>
+    <table class="tda2" border="0">
+        <tr>
+            <th colspan="3" class="thth"><h3 class="h33">Dakhla</h3></th>
+        </tr>
+        <tr>
+            <th colspan="3" class="thth"><h4 class="sdd">100% original idea 🏳️</h4></th>
+            </tr>
+        <tr>
+            <th class="lespace" colspan="3">&nbsp;</th>
+        </tr>
+        <tr class="akber">
+            <th class="p1"><img src="p1.jpg"></th>
+            <th class="part2"><img src="p2.jpg"></th>
+            <th><img src="p3.jpg"></th>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table border="0" class="mybeqq">
+        <tr>
+        <th><img src="pytho.png" class="mybeqimgg"></th><th>&nbsp;&nbsp;&nbsp;</th>
+        <th class=""><a href="https://www.instagram.com/mono.graphics/"><img src="mono.jpg" class="mybeqimgg"></a></th>
+    </tr>
+    </table>
+    </br>
+    </br>
+    </br>
+    </div>
+    </div>  
+    </div>
+    
+    </section>
+<section class="arte">
+<div id="artee">
+    <div class="contact" >
+
+<hr>
+<hr>
+<hr>
+    <span class="text1"><span class="margauto">Art</span></span>
+
+    <span class="text2"><span class="margauto">Made with our hands</span></span>
+<hr>
+<hr>
+<hr>
+<br>
+<br>
+    <br>
+    <br>
+    <br>
+    <center><marquee scrollamount="5">
+        <table>
+            <tr>
+                <th><img src="art1.jpg" height="200" width="200"></th>
+                <th class="espace"></th>
+                <th><img src="art3.jpg" height="200" width="200"></th>
+                <th class="espace"></th>
+                <th><img src="art5.jpg" height="200" width="200"></th>
+            </tr>
+        </table>
+    </marquee></center>
+    <br>
+    <br>
+        <center><marquee scrollamount="5" direction="right">
+        <table>
+            <tr>
+                <th><img src="art4.jpg" height="200" width="200"></th>
+                <th class="espace"></th>
+                <th><img src="art2.jpg" height="200" width="200"></th>
+                <th class="espace"></th>
+                <th><img src="work2.PNG" height="200" width="200"></th>
+            </tr>
+        </table>
+    </marquee></center>
+    <br>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+    </div>
+</section>
+<div id="pict">
+<hr class="hrbanner">
+
+<section>
+<br>
+<br>
+<br>
+<br>
+<div class="memories"></div>
+<br>
+<br>
+<br>
+<br>
+<hr class="hrbanner">
+</div>
+</section>
+
+    <section class="quote2">
+        <div id="quote2">
+            <div class="tadhlil">
+            <br>
+            <table class="tq" border="0">
+                <tr>
+                    <th class="accentgrave">``</th>
+            <th> <div class="amoud"><img src="pytho.png"></div></th>
+            <th class="accentaigu">``</th>
+            </tr>
+            </table>
+        <hr class="hrquote">
+         <center><p class="pquote2ar"> سُبْحَانَ الَّذِي أَسْرَى بِعَبْدِهِ لَيْلاً مِّنَ الْمَسْجِدِ الْحَرَامِ إِلَى الْمَسْجِدِ الأَقْصَى الَّذِي بَارَكْنَا حَوْلَهُ لِنُرِيَهُ مِنْ آيَاتِنَا إِنَّهُ هُوَ السَّمِيعُ البَصِيرُ </p></center>
+        </p></center> <center>
+        <table>
+            <tr>
+                <th class="flags"><a href="https://www.versobooks.com/en-gb/blogs/news/solidarity-with-palestine-free-resources-and-further-reading"><img src="palestine2.jpg" class="pal"></a></th>
+                <th class="esp">&nbsp;</th>
+                <th><p class="pquote2arr">{1} (الإسراء)</p></th>
+                <th class="esp">&nbsp;</th>
+                <th class="flags"><img src="tunisia.png" class="pal"></th>
+            </tr>
+        </table></center>
+         <br>
+         <center>
+            <p class="arabquote">سَلامُُ<span class="green"> لأرض خُلقَت</span> للسَلام <span class="red">ومَا رأت يومًا سَلامًا</span> </p>
+        </center>
+        <br>
+        <br>     
+        <br>
+        <hr class="hrbanner">
+    </div>
+</div>
+</section>
+<br>
+<br>
+        <br>
+
+<section class="ourpics">
+    <div id="memss">
+    <hr>
+    <hr>
+    <hr>
+    
+        <span class="text1"><span class="margauto">Moments</span></span>
+    
+        <span class="text2"><span class="margauto">we spent together</span></span>
+    <hr>
+    <hr>
+    <hr>
+    <br>
+    <br>
+<table border="0" class="art">
+    <tr><th><br><br><br></th></tr>
+    <tr><th colspan="2" class="mem1"><a href="img4.jpg"><img src="img4.jpg" height="100" width="200"></a></th></tr>
+    <tr><th><br><br><br></th></tr>
+    </table>
+    <table border="0" class="art2">
+
+   
+        <tr>
+            <th class="mem2"><a href="img6.jpg"><img src="img6.jpg" ></a></th>
+            <th class="mem2"><a href="img7.jpg"><img src="img7.jpg" ></a></th>
+        </tr>
+    
+    </table>
+    <table border="0" class="art">
+    <tr>
+    
+        <th colspan="2" class="mem1"><a href="img2.jpg"><img src="img2.jpg" height="100" width="200"></a></th>
+    
+        
+    </tr>
+    <tr><th><br><br><br></th></tr>
+    <tr><th colspan="2" class="mem1"><a href="img1.jpg"><img src="img1.jpg" height="100" width="200"></a></th></tr>
+    <tr><th><br><br><br></th></tr>
+</table>
+        
+<br><br><br>
+</section>
+</div>
+</div>
+<footer><div id="mybequest">
+    <br><table border="0" class="mybeqp"><tr><th><p class="mybequest">next seniors, continue the job.
+        create a <br>website every year.
+        let's make <br>this  our tradition !</p></th>
+    </tr><tr><th><br></th></tr><tr><tr><th><hr class="hrmybeq"></th></tr><tr><th><br></th></tr><tr>
+<th><p class="mybequest2">2K25  2K26  2K27  2K28  2K29  2K30</p></th></tr>
+    </tr></table>
+    
+        <br><table border="0" class="mybeq">
+            <tr>
+            <th><img src="pytho.png" class="mybeqimg"></th><th>&nbsp;&nbsp;&nbsp;</th>
+            <th><img src="tunisia.gif" class="mybeqimg"></th>
+        </tr>
+    </table><br><p class="mybequest">total number of lines: <span class="animat">1850</span>.</p>
+    <br><br><button id="knowmore" onclick="history()">Discover how we did all of this</button>
+    <br><br><br>
+</div>
+
+<p class="name">made by everyone of us </p>
+</footer>
+</div>  
+</div>
+</div>
+</body>
+</html>
+
+
+
+<script>
+    LetTheDogsOut=true;
+    dakhla=document.getElementById("dakhla");
+    document.getElementById("dakhla").style.display="none";
+    left=document.getElementById("left");
+    right=document.getElementById("right");
+    body=document.getElementById("all");
+    quote1=document.getElementById("quote1");
+    quote2=document.getElementById("quote2");
+    lista=document.getElementById("lista");
+    pict=document.getElementById("pict");
+    artee=document.getElementById("artee");
+    memss=document.getElementById("memss");
+    all=document.getElementById("all");
+    panel=document.getElementById("panel");
+    body.style.display="none";
+    left.style.display="none";
+    right.style.display="none";
+    quote1.style.display="none";
+    quote2.style.display="none";
+    lista.style.display="none";
+    pict.style.display="none";
+    artee.style.display="none";
+    memss.style.display="none";
+    document.getElementById("mybequest").style.display="none";
+    /* js is a mess that i prefer to ignore */
+    ol=document.getElementById("overlay");
+    window.addEventListener("load",function(){
+        ol.style.display="none";
+        body.style.display="inline";
+        
+    })
+    t1.addEventListener("keydown", function (e) {
+    if (e.code === "Enter") {  
+        verif(e);
+    }
+});
+function hide(){document.getElementById("alert").style.display="none";}
+var countDownDate = new Date("MAR 02, 2024 16:00:00").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("timeleft").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timeleft").innerHTML = "Just a Moment!";
+  }
+}, 1000);
+a=document.getElementById("ac");
+b=document.getElementById("bc");
+a.style.display="none";
+document.addEventListener('contextmenu', event => event.preventDefault());
+function sound(){
+    if (document.getElementById("timeleft").textContent == "Just a Moment!" && LetTheDogsOut==true){
+        document.getElementById("ac").style.display="inline";
+     b.style.display="none";}
+    }
+st="";
+s1=0;
+s2=0;
+function verif(){
+    message = document.getElementById('mess');
+    messagef = document.getElementById('mesf');
+    a=document.getElementById("t1").value;
+    body.style.display="inline";
+    if (a=="@import tools" && s1==0){
+        st+="wel";
+        s1=1;
+        messagef.innerHTML ="";
+        message.innerHTML ="Step 1 accomplished!";
+        document.getElementById("t1").value+="Step 1 accomplished!"
+        a=document.getElementById("t1").value="";
+    }
+    if (a=="@import tools" && s1==1){
+        message.innerHTML ="";
+        messagef.innerHTML ="Step 1 Already Made !";
+    }
+    if (a=="GET Access" && st=="wel" && s2==0){
+        st+="come";
+        s2=1;
+        messagef.innerHTML ="";
+        message.innerHTML ="Step 2 accomplished!";
+        a+="Step 2 accomplished!"
+        a=document.getElementById("t1").value="";
+    }
+    if (a=="-GET Access"  && s2==1){
+        message.innerHTML ="";
+        messagef.innerHTML ="Step 2 Already Made !";
+    }
+    if(a=="/create website" && st=="welcome"){
+        st+="!"
+        message.innerHTML ="Welcome ! :)";
+        a=document.getElementById("t1").value="";
+        messagef.innerHTML ="";
+        document.getElementById("skip").style.display="none";
+        setTimeout(veriff, 1500);
+    }
+    
+    if (a !="" && a!="@import tools" && a!="-GET Access") {
+        message.innerHTML ="";
+        messagef.innerHTML ="<erreur>"+ a+" is not defined ! </erreur>";
+    }
+    if (a =="" && st!="welcome!") {
+        
+        messagef.innerHTML ="";
+    }
+    if(a=="" && st=="welcome!"){
+        message.innerHTML ="Welcome ! :)";
+    }
+}
+function veriff(){
+    open()
+}
+function open(){
+        panel.style.display="none";
+        all.style.display="inline";
+        quote1.style.display="inline";
+        quote2.style.display="inline";
+        lista.style.display="inline";
+        pict.style.display="inline";
+        artee.style.display="inline";
+        memss.style.display="inline";
+        left.style.display="inline";
+        right.style.display="inline";
+        document.getElementById("mybequest").style.display="inline";
+        dakhla.style.display="inline";
+}
+document.addEventListener('contextmenu', event => event.preventDefault());
+function link() {
+  window.location.href = "https://en.wikipedia.org/wiki/Veni,_vidi,_vici#:~:text=Veni%2C%20vidi%2C%20vici%20(Classical,to%20a%20swift%2C%20conclusive%20victory.";
+  }
+    function history() {
+  window.location.href = "https://bacinfo2024.github.io/history/";
+  }
+</script>
+<!--   
+                                                 #    #
+                                            %%% ##   ##
+                                         %%%%% ###%%###
+                                        %%%%% ### %%% #
+                                      %%%%%% ### %%% ###
+                                       %%%% ## %% #######
+                                      %%%%% # %% #######
+                                    %%%%%% # % #########
+                                   %%%%% ##### #########
+                         ###        %% ####### #########
+                %%% #M##########    ########### ########
+             %%%% ############################### #######
+           %%%%% ################################## ######
+         %%%%%% #################################### #####
+        %%%%%% #####################################  ###
+        %%%%% #######################################
+       %%%%%% ########################################
+    % %%%%%%% ########################################
+     %%%%%%%%% #######################################
+    %%%%%%%%% ########################################
+ %%% %%%%%%%%   ###### ################################
+   %%%%%%%%      ###### #################### ##########
+% %%%%%%%%        ####### ########### ###### ##########
+ %%%%%%%%%         #######  ########### ###### ########
+%%%%%%%%%%          ##### ###  ######### ####### ######
+ %%%%%%%%%%          #### ##               ####### ####
+ %%%%%%%%%%           ## #                  ##### ###
+  %%  %% % %%         # ##                      ## ###
+    %   %    %        # ###                      # ###
+                       # ###                     ## ###
+                       # ###                     ## ###
+                       # ####                   #### ##
+                      ##H ###                  ##### ###
+                     ####  ###                 ####   ##
+                    #####   ###                 ##    ##
+                   #####    ####                      ###
+                    ##        ###                     ###
+                               ####                     ##
+                                ####                    ###
+                                                        ####
+                                                         ##
